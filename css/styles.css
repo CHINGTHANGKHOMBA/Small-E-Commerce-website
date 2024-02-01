@@ -77,3 +77,9 @@ li{
     justify-content: space-between;
 }
 
+/* .nav-list .icons */
+
+.nav-center .nav-item:not(:last-child){
+    margin-right: 0.5rem;
+}
+
