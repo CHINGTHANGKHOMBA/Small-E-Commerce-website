@@ -82,4 +82,8 @@ li{
 .nav-center .nav-item:not(:last-child){
     margin-right: 0.5rem;
 }
+.nav-center .nav-link{
+    font-size: 1.8rem;
+    padding: 1rem;
+}
 
