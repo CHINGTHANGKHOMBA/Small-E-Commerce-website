@@ -1,0 +1,79 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*, *::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+   --white: #fff;
+   --black: #222;
+   --green: #6cbe02;
+   --grey1: #f0f0f0;
+   --grey2: #e9d7d3;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Poppons', sans-serif;
+    font-size: 1.6rem;
+    background-color: var(--white);
+    color: var(--black);
+    font-weight: 400;
+    font-style: normal;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+li{
+    list-style-type: none ;
+}
+ .container{
+    max-width: 114rem;
+    margin: 0 auto;
+    padding: 0 3rem;
+ }
+
+ .d-flex{
+    display: flex;
+    align-items: center;
+ }
+ 
+/* Header   */
+.header{
+     position: relative;
+     min-height: 100vh;
+     overflow: hidden;
+}
+.top-nav{
+    background-color: #6cbe02;
+    font-size: 1.3rem;
+    color: white;
+}
+.top-nav div{
+    justify-content: space-between;
+    height: 4.5rem;
+}
+.top-nav a{
+    padding: 0 0.5rem;
+    color: var(--white);
+}
+
+/* Navigation */
+.navigation{
+    height: 0 0.5rem;
+    line-height: 6rem;
+}
+
+.nav-center{
+    justify-content: space-between;
+}
+
