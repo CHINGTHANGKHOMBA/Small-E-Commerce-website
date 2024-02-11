@@ -2,77 +2,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- Boxicons -->
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!-- Glidejs -->
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.core.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.theme.css">
-    <!-- stylesheet  -->
-    <link rel="stylesheet" href="./css/styles.css">
-    <title>E-Commerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/styles.css">
+    <title>Nike Store</title>
 </head>
+
 <body>
-    <!-- Header -->
-    <header class="header" id="header">
-        <!-- top nav -->
-        <div class="top-nav">
-            <div class="container d-flex">
-                <p>Order Online or Call us (+91) 7005009656</p>
-                <ul class="d-flex">
-                    <li><a href="">About us</a></li>
-                    <li><a href="">FAQ</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
+
+    <!-- navTop -->
+<nav>
+    <div class="navTop">
+        <div class="navItem">
+            <img src="/images/sneakers.png" alt="">
+        </div>
+        <div class="seach">
+            <div class="navItem">
+                <input type="text" placeholder="Search..." class="searchInput">
+                <img src="/images/search.png" alt="" width="20" height="20" class="searchIcon">
             </div>
         </div>
-        <!-- Navigation -->
-        <div class="navigation">
-        <div class="nav-center container d-flex">
-            <a href="" class="logo"><h1>Dans</h1></a>
-            <ul class="nav-list d-flex">
-              <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
-              <li class="nav-item"><a href="product.html" class="nav-link">Shop</a></li>
-              <li class="nav-item"><a href="#terms" class="nav-link">Terms</a></li>
-              <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-              <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-            <li class="icons d-flex">
-                
-            </li>
-            </ul>
-            <div class="icons d-flex">
-                <a href="login.html" class="icon"><i class="bx bx-user"></i></a>
-                <div class="icon"><i class="bx bx-search"></i></div>
-                <div class="icon"><i class="bx bx-heart"></i>
-                    <span class="d-flex">0</span>
-                </div>
-                
-                <a href="cart.html" class="icon"><i class="bx bx-cart"></i>
-                    <span class="d-flex">0</span>
-                </a>
-               
-               </div>
-          </div>
+        
+        <div class="navItem">
+            <span class="limitedoffer">Limited Offer!</span>
         </div>
-                 
-                <!-- Icons -->
-         
-                <!-- Hamburger -->
-                <div class="hamburger">
-                    <i class="bx bx-menu-alt-left"></i>
-                </div>
-              
-        <!-- hero -->
-    
-    </header>
-    
- 
-    <!-- Glidejs -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/glide.js"></script>
-    <!-- Slidejs -->
-    <script src="js/slider.js"></script>
-    <!-- Indexjs -->
-    <script src="js/index.js"></script>
+    </div>
 
+    <!-- navButtom -->
+    <div class="navBottom">
+        <h3 class="menuItem"> AIR FORCE</h3>
+        <h3 class="menuItem"> JORDAN</h3>
+        <h3 class="menuItem"> BLAZER</h3>
+        <h3 class="menuItem"> CRATER</h3>
+        <h3 class="menuItem"> HIPPIE</h3>
+    </div>
+</nav>
+
+<!-- slider -->
+<div class="slider">
+    <div class="sliderWrapper">
+        <div class="sliderItem">
+            <img src="/images/air.png" alt="" class="sliderImg">
+            <div class="sliderbg"></div>
+            <h1 class="sliderTitle">AIR FORCE </br> NEW </br> SEASON </h1>
+            <h2 class="sliderPrice">$119</h2>
+            <button class="buyButton">BUY Now!</button>
+        </div>
+        <div class="sliderItem">
+            <img src="/images/hippie.png" alt="" class="sliderImg">
+            <div class="sliderbg"></div>
+            <h1 class="sliderTitle">AIR FORCE </br> NEW </br> SEASON </h1>
+            <h2 class="sliderPrice">$119</h2>
+            <button class="buyButton">BUY Now!</button>
+        </div>
+        <div class="sliderItem">
+            <img src="/images/jordan.png" alt="" class="sliderImg">
+            <div class="sliderbg"></div>
+            <h1 class="sliderTitle">AIR FORCE </br> NEW </br> SEASON </h1>
+            <h2 class="sliderPrice">$119</h2>
+            <button class="buyButton">BUY Now!</button>
+        </div>
+        <div class="sliderItem">
+            <img src="/images/blazer.png" alt="" class="sliderImg">
+            <div class="sliderbg"></div>
+            <h1 class="sliderTitle">AIR FORCE </br> NEW </br> SEASON </h1>
+            <h2 class="sliderPrice">$119</h2>
+            <button class="buyButton">BUY Now!</button>
+        </div>
+        <div class="sliderItem">
+            <img src="/images/crater.png" alt="" class="sliderImg">
+            <div class="sliderbg"></div>
+            <h1 class="sliderTitle">AIR FORCE </br> NEW </br> SEASON </h1>
+            <h2 class="sliderPrice">$119</h2>
+            <button class="buyButton">BUY Now!</button>
+        </div>
+    </div>
+</div>
+
+<div class="features">
+    <div class="feature">
+        <img src="/images/shipping.png" alt="" class="featureIcon">
+        <span class="featureTitle">FREE SHIPPING</span>
+        <span class="featureDesc">Free worldwide shipping on all orders.</span>
+    </div>
+    <div class="feature">
+        <img src="/images/return.png" alt="" class="featureIcon">
+        <span class="featureTitle">30 DAYS RETURN</span>
+        <span class="featureDesc">No question return and easy refund in 14 days.</span>
+    </div>
+    <div class="feature">
+        <img src="/images/gift.png" alt="" class="featureIcon">
+        <span class="featureTitle">GIFT CARDS</span>
+        <span class="featureDesc">Buy gift cards and use coupon codes easily.</span>
+    </div>
+    <div class="feature">
+        <img src="/images/contact.png" alt="" class="featureIcon">
+        <span class="featureTitle">CONTACT US!</span>
+        <span class="featureDesc">Keep in touch via email and support system.</span>
+    </div>
+</div>
+
+    <script src="/js/index.js"></script>
 </body>
 </html>

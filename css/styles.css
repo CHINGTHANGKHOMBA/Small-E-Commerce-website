@@ -1,120 +1,179 @@
-/* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-
-*, *::after,*::before{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-:root{
-   --white: #fff;
-   --black: #222;
-   --green: #6cbe02;
-   --grey1: #f0f0f0;
-   --grey2: #e9d7d3;
-}
-
-html{
-    font-size: 62.5%;
-}
-
 body{
-    font-family: 'Poppons', sans-serif;
-    font-size: 1.6rem;
-    background-color: var(--white);
-    color: var(--black);
-    font-weight: 400;
-    font-style: normal;
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+nav{
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 20px 50px;
 }
 
-a{
-    text-decoration: none;
-    color: inherit;
-}
-
-li{
-    list-style-type: none ;
-}
- .container{
-    max-width: 114rem;
-    margin: 0 auto;
-    padding: 0 3rem;
- }
-
- .d-flex{
+.navTop{
     display: flex;
     align-items: center;
- }
- 
-/* Header   */
-.header{
-     position: relative;
-     min-height: 100vh;
-     overflow: hidden;
-}
-.top-nav{
-    background-color: #6cbe02;
-    font-size: 1.3rem;
-    color: white;
-}
-.top-nav div{
-    justify-content: space-between;
-    height: 4.5rem;
-}
-.top-nav a{
-    padding: 0 0.5rem;
-    color: var(--white);
-}
-
-/* Navigation */
-.navigation{
-    height: 0 0.5rem;
-    line-height: 6rem;
-}
-
-.nav-center{
     justify-content: space-between;
 }
 
-/* .nav-list .icons */
-
-.nav-center .nav-item:not(:last-child){
-    margin-right: 0.5rem;
-}
-.nav-center .nav-link{
-    font-size: 1.8rem;
-    padding: 1rem;
+.seach{
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    padding: 10px 20px;
+    border-radius: 10px;
 }
 
-.nav-center .nav-link:hover{
-    color: var(--green);
+.searchInput{
+    border: none;
+    background-color: transparent;
 }
-
-/* icons */
-
-.icon {
+.searchInput::placeholder{
+    color: rgb(165, 232, 232);
+}
+.limitedoffer{
+    font-size: 28px;
+    border-bottom: 2px solid green;
     cursor: pointer;
-    font-size: 2.5rem;
-    padding: 0 1rem;
-    color: #555;
-    position: relative;
 }
 
-.icon:not(:last-child){
-    margin-right: 0.5rem;
-}
-
-.icon span {
-    position: absolute;
-    top: 3px;
-    right: -3px;
-    background-color: var(--green);
-    color: white;
-    border-radius: 50%;
-    font-size: 1.3rem;
-    height: 2rem;
-    width: 2rem;
+.navBottom{
+    display: flex;
+    align-items: center;
     justify-content: center;
-    padding-top: 5px;
+}
+.menuItem{
+    margin-right: 40px;
+    cursor: pointer;
+    color: aqua;
+    font-weight: 100;
+}
+.slider{
+    overflow: hidden;
+    background: url(https://images.unsplash.com/photo-1604147495798-57beb5d6af73?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmxhY2slMjB3YWxsfGVufDB8fDB8fHww);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
+}
+.sliderWrapper{
+    display: flex;
+    width: 500vw;
+    transition: all 2s ease-in-out;
+}
+
+.sliderItem{
+width: 100vw;
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+}
+.sliderbg{
+    width: 750px;
+    height: 750px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: green;
+}
+.sliderImg{
+    z-index: 1;
+}
+.sliderTitle{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    z-index: 1;
+}
+.sliderPrice{
+    position: absolute;
+    top: 10px;
+    left:10px;
+    color: white;
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid rgb(239, 244, 239);
+    z-index: 1;
+}
+
+.buyButton{
+    border: none;
+   position: absolute;
+   top: 45%;
+   right: 5%;
+   color: white;
+   font-size: 30px;
+   font-weight: 900;
+   z-index: 1;
+   cursor: pointer;
+   background-color: black;
+}
+
+.buyButton:hover{
+    background-color: white;
+    color: black;
+}
+
+.sliderItem:nth-child(1) .sliderbg{
+    background-color: rgb(34, 87, 58);
+}
+.sliderItem:nth-child(2) .sliderbg{
+    background-color: rgb(65, 154, 86);
+}
+.sliderItem:nth-child(3) .sliderbg{
+    background-color: rgb(49, 56, 108);
+}
+.sliderItem:nth-child(4) .sliderbg{
+    background-color: rgb(98, 33, 86);
+}
+.sliderItem:nth-child(5) .sliderbg{
+    background-color: rgb(109, 82, 201);
+}
+.sliderItem:nth-child(1) .sliderPrice{
+    color: rgb(34, 87, 58);
+}
+.sliderItem:nth-child(2) .sliderPrice{
+    color: rgb(84, 176, 79);
+}
+.sliderItem:nth-child(3) .sliderPrice{
+    color: rgb(73, 62, 175);
+}
+.sliderItem:nth-child(4) .sliderPrice{
+    color: rgb(157, 72, 156);
+}
+.sliderItem:nth-child(5) .sliderPrice{
+    color: rgb(109, 82, 201);
+}
+
+.features{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+.feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.featureIcon{
+    width: 50px;
+    height: 50px;
+}
+.featureTitle{
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px;
+}
+
+.featureDesc{
+    color: green;
+    width: 50%;
+    height: 100px;
+
 }
