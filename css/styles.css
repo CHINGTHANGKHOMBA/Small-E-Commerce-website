@@ -56,7 +56,7 @@ nav{
 .sliderWrapper{
     display: flex;
     width: 500vw;
-    transition: all 2s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 
 .sliderItem{
@@ -176,4 +176,64 @@ position: relative;
     width: 50%;
     height: 100px;
 
+}
+
+.products{
+    height: 100vh;
+    background-color: whitesmoke;
+    position: relative;
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+}
+.productImg{
+    width: 50%;
+}
+.productDetails{
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 40%;
+    padding: 50px; 
+}
+.productTitle{
+    font-weight: 900;
+    font-size: 75px;
+}
+.productDesc{
+    font-style: 24px;
+    color: gray;
+}
+.colors,.sizes{
+    display: flex;
+}
+.color{
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    background-color: black;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.color:last-child{
+    background-color: aqua;
+}
+.size{
+    padding: 5px 20px;
+    border: 2px solid rgb(11, 17, 21);
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    justify-content: center;
+}
+.productButton{
+    float: right;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+.productButton:hover{
+    font-weight: 600;
+    background-color: white;
+    color: black;
 }
