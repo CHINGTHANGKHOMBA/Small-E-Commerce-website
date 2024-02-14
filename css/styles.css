@@ -185,7 +185,7 @@ position: relative;
     clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
 }
 .productImg{
-    width: 50%;
+    width: 40%;
 }
 .productDetails{
     position: absolute;
