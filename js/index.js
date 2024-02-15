@@ -104,7 +104,7 @@ choosenProduct = products[index];
 // changes texts of currentProducts
 currentProductTitle.textContent = choosenProduct.title;
 currentProductPrice.textContent = "$" + choosenProduct.price;
-currentProductImg.src = choosenProduct.colors[index].img;
+currentProductImg.src = choosenProduct.colors[0].img;
 
 
 // assign new color
