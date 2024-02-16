@@ -8,7 +8,7 @@ const products = [
   id: 1,
   title: "Air Force",
   price: 199,
-  color: [
+  colors: [
   {
     code: "black",
     img: "/images/air.png",
@@ -24,7 +24,7 @@ const products = [
   id: 2,
   title: "Air Jordan",
   price: 149,
-  color: [
+  colors: [
     {
       code: "lightgray",
       img: "/images/jordan.png",
@@ -40,14 +40,14 @@ const products = [
   id: 3,
   title: "Blazer",
   price: 109,
-  color: [
+  colors: [
     {
       code: "lightgray",
       img: "/images/blazer.png",
     },
     {
       code: "green",
-      img: "images/blazer2.png"
+      img: "/images/blazer2.png"
     },
   ],
 },
@@ -55,14 +55,14 @@ const products = [
   id: 4,
   title: "Crater",
   price: 129,
-  color: [
+  colors: [
     {
       code: "black",
-      img: "images/crater.png",
+      img: "/images/crater.png",
     },
     {
       code: "lightgray",
-      img: "images/crater2.png",
+      img: "/images/crater2.png",
     },
   ],
 },
@@ -78,7 +78,7 @@ const products = [
     },
     {
       code: "black",
-      img: "/imgages/hippie2.png",
+      img: "/images/hippie2.png",
     },
   ],
 },
@@ -89,8 +89,8 @@ let choosenProduct = products[0];
 const currentProductImg = document.querySelector(".productImg");
 const currentProductTitle = document.querySelector(".productTitle");
 const currentProductPrice = document.querySelector(".productPrice");
-const currentProductColors = document.querySelectorAll(".colors");
-const currentProductsizes = document.querySelectorAll(".sizes");
+const currentProductColors = document.querySelectorAll(".color");
+const currentProductsizes = document.querySelectorAll(".size");
 
 
 menuItem.forEach((item, index)=>{
@@ -120,6 +120,7 @@ currentProductColors.forEach((color, index) => {
     currentProductImg.src = choosenProduct.colors[index].img;
   });
 });
+
 
 
 
